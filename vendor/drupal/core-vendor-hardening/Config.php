@@ -20,8 +20,7 @@ class Config {
    * @var array
    */
   protected static $defaultConfig = [
-    'behat/mink' => ['tests'],
-    'behat/mink-browserkit-driver' => ['tests'],
+    'behat/mink' => ['tests', 'driver-testsuite'],
     'behat/mink-selenium2-driver' => ['tests'],
     'composer/composer' => ['bin'],
     'drupal/coder' => [
@@ -29,7 +28,9 @@ class Config {
       'coder_sniffer/DrupalPractice/Test',
     ],
     'doctrine/instantiator' => ['tests'],
+    'easyrdf/easyrdf' => ['scripts'],
     'egulias/email-validator' => ['documentation', 'tests'],
+    'friends-of-behat/mink-browserkit-driver' => ['tests'],
     'guzzlehttp/promises' => ['tests'],
     'guzzlehttp/psr7' => ['tests'],
     'instaclick/php-webdriver' => ['doc', 'test'],
@@ -47,6 +48,7 @@ class Config {
     'phpspec/prophecy' => ['fixtures', 'spec', 'tests'],
     'phpunit/php-code-coverage' => ['tests'],
     'phpunit/php-timer' => ['tests'],
+    'phpunit/php-token-stream' => ['tests'],
     'phpunit/phpunit' => ['tests'],
     'sebastian/code-unit-reverse-lookup' => ['tests'],
     'sebastian/comparator' => ['tests'],
@@ -59,9 +61,11 @@ class Config {
     'sebastian/recursion-context' => ['tests'],
     'seld/jsonlint' => ['tests'],
     'squizlabs/php_codesniffer' => ['tests'],
+    'stack/builder' => ['tests'],
     'symfony/browser-kit' => ['Tests'],
     'symfony/console' => ['Tests'],
     'symfony/css-selector' => ['Tests'],
+    'symfony/debug' => ['Tests'],
     'symfony/dependency-injection' => ['Tests'],
     'symfony/dom-crawler' => ['Tests'],
     'symfony/filesystem' => ['Tests'],
@@ -74,9 +78,11 @@ class Config {
     'symfony/psr-http-message-bridge' => ['Tests'],
     'symfony/routing' => ['Tests'],
     'symfony/serializer' => ['Tests'],
+    'symfony/translation' => ['Tests'],
     'symfony/var-dumper' => ['Tests'],
     'symfony/validator' => ['Tests', 'Resources'],
     'symfony/yaml' => ['Tests'],
+    'symfony-cmf/routing' => ['Test', 'Tests'],
     'theseer/tokenizer' => ['tests'],
     'twig/twig' => ['doc', 'ext', 'test', 'tests'],
   ];
